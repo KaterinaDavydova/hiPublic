@@ -1,0 +1,306 @@
+/* reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+}
+
+/* --------- end reset styles -------------- */
+
+/* default  */
+
+body {
+    scroll-behavior: smooth;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+}
+
+/* --------------- FONTS ---------------- */
+
+@font-face {
+    font-family: "Right Grotesk";
+    src: url(../font/RightGroteskText-CompactMedium.ttf);
+    src: url(../font/RightGroteskText-CompactMedium.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Right Grotesk Bold";
+    src: url(../font/right-grotesk-tight-black.ttf);
+    src: url(../font/right-grotesk-tight-black.woff);
+    font-weight: normal;
+}
+
+/* --------------------------------------------------- */
+
+
+.prime__container {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.prime__img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 727px;
+    width: 50vw;
+}
+
+.prime__content {
+    width: 100%;
+}
+
+.prime__content_left {
+    background: rgba(134, 16, 131, 1);
+}
+
+.prime__content_left img {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -50%);
+    max-width: 372px;
+    width: 26vw;
+
+}
+
+.prime__content_right {
+    background: rgba(248, 115, 17, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    justify-content: center;
+    
+}
+
+.prime__title {
+
+    font-family: "Right Grotesk Bold";
+    font-style: normal;
+    font-weight: 900;
+    line-height: 80%;
+    text-transform: uppercase;
+    color: #861083;
+    padding-left: 60px;
+    font-size: clamp(80px, 9vw, 120px);
+    width: 65%;
+}
+
+.prime__text {
+    font-family: "Right Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 41px;
+    color: #FFFFFF;
+    width: 75%;
+    padding-left: 60px;
+    font-size: clamp(20px, 3vw, 34px);
+}
+
+@media (max-width: 1200px) {
+
+    .prime__text {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .prime__img{
+        width: 70vw;
+    }
+
+    .prime__text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .prime__container {
+
+        flex-direction: column;
+    }
+
+    .prime__content_left{
+        height: calc(100% - 60%);
+        position: relative;
+    }
+
+    .prime__content_left img {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 225px;
+        width: 100%;
+    }
+
+    .prime__content_right {
+        height: calc(100% - 40%);
+        text-align: center;
+        align-items: center;
+        justify-content: unset;
+        padding-top: 42px;
+        gap: 24px;
+    }
+
+    .prime__title {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .prime__text {
+        line-height: 28px;
+        text-align: center;
+        padding-left: 0;
+        width: 51%;
+    }
+
+    .prime__img {
+        max-width: 601px;
+        width: 60vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .prime__img {
+        width: 78vw;
+    }
+
+    .prime__text{
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prime__img {
+        width: 125vw;
+    }
+
+    .prime__text{
+        width: 75%;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .prime__img {
+        width: 154vw;
+    }
+
+    .prime__text{
+        width: 90%;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .prime__text{
+        width: 100%;
+    }
+}
