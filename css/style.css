@@ -149,21 +149,24 @@ body.lock {
 
 .prime__content {
     width: 100%;
+    padding: 191px 60px 60px;
+    display: flex;
 }
 
 .prime__content_left {
     background: rgba(134, 16, 131, 1);
+    justify-content: right;
 }
 
-.prime__content_left img {
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-120%, -50%);
+.prime__content-img {
+    aspect-ratio: 0.81 / 1;
     max-width: 372px;
-    width: 26vw;
+    height: fit-content;
+}
 
+.prime__content-img img{
+    height: 100%;
+    width: 100%;
 }
 
 .prime__content_right {
@@ -171,7 +174,7 @@ body.lock {
     display: flex;
     flex-direction: column;
     gap: 34px;
-    justify-content: center;
+    justify-content: left;
     
 }
 
@@ -183,7 +186,6 @@ body.lock {
     line-height: 80%;
     text-transform: uppercase;
     color: #861083;
-    padding-left: 60px;
     font-size: clamp(80px, 9vw, 120px);
     width: 65%;
 }
@@ -196,7 +198,6 @@ body.lock {
     line-height: 41px;
     color: #FFFFFF;
     width: 75%;
-    padding-left: 60px;
     font-size: clamp(20px, 3vw, 34px);
 }
 
@@ -222,30 +223,29 @@ body.lock {
 @media (max-width: 900px) {
 
     .prime__container {
-
         flex-direction: column;
     }
 
     .prime__content_left{
-        height: calc(100% - 60%);
-        position: relative;
+        height: calc(100% - 55%);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 63px 83px;
     }
 
-    .prime__content_left img {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        max-width: 225px;
-        width: 100%;
+    .prime__content-img {
+        aspect-ratio: 0.86 / 1;
+        max-width: 226px;
     }
 
     .prime__content_right {
-        height: calc(100% - 40%);
+        height: calc(100% - 45%);
         text-align: center;
         align-items: center;
-        justify-content: unset;
-        padding-top: 42px;
+        justify-content: start;
         gap: 24px;
+        padding: 42px 32px;
     }
 
     .prime__title {
@@ -257,7 +257,7 @@ body.lock {
         line-height: 28px;
         text-align: center;
         padding-left: 0;
-        width: 51%;
+        width: 55%;
     }
 
     .prime__img {
@@ -269,7 +269,7 @@ body.lock {
 @media (max-width: 768px) {
 
     .prime__img {
-        width: 78vw;
+        width: 65vw;
     }
 
     .prime__text{
@@ -279,7 +279,7 @@ body.lock {
 
 @media (max-width: 480px) {
     .prime__img {
-        width: 125vw;
+        width: 93vw;
     }
 
     .prime__text{
@@ -290,7 +290,7 @@ body.lock {
 @media (max-width: 390px) {
 
     .prime__img {
-        width: 154vw;
+        width: 115vw;
     }
 
     .prime__text{
