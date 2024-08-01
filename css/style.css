@@ -143,8 +143,10 @@ body.lock {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    max-width: 727px;
     width: 50vw;
+    height: auto;
+    max-width: 727px;
+    max-height: 484px;
 }
 
 .prime__content {
@@ -211,10 +213,6 @@ body.lock {
 
 @media (max-width: 1024px) {
 
-    .prime__img{
-        width: 70vw;
-    }
-
     .prime__text {
         width: 100%;
     }
@@ -259,11 +257,6 @@ body.lock {
         padding-left: 0;
         width: 55%;
     }
-
-    .prime__img {
-        max-width: 601px;
-        width: 60vw;
-    }
 }
 
 @media (max-width: 768px) {
@@ -274,6 +267,14 @@ body.lock {
 
     .prime__text{
         line-height: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .prime__img {
+        width: 80vw; 
+        max-width: 601px; 
+        max-height: 400px; 
     }
 }
 
