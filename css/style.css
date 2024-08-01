@@ -149,13 +149,13 @@ body.lock {
 
 .prime__content {
     width: 100%;
-    padding: 191px 60px 60px;
     display: flex;
 }
 
 .prime__content_left {
     background: rgba(134, 16, 131, 1);
     justify-content: right;
+    padding: 21vh 60px 60px;
 }
 
 .prime__content-img {
@@ -175,7 +175,7 @@ body.lock {
     flex-direction: column;
     gap: 34px;
     justify-content: left;
-    
+    padding: 19vh 60px 60px;
 }
 
 .prime__title {
@@ -231,7 +231,7 @@ body.lock {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 63px 83px;
+        padding: 7vh 83px;
     }
 
     .prime__content-img {
@@ -245,7 +245,7 @@ body.lock {
         align-items: center;
         justify-content: start;
         gap: 24px;
-        padding: 42px 32px;
+        padding: 4vh 32px;
     }
 
     .prime__title {
@@ -291,6 +291,10 @@ body.lock {
 
     .prime__img {
         width: 115vw;
+    }
+
+    .prime__title {
+        font-size: 66px;
     }
 
     .prime__text{
